@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QR Code Generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>Generate your ticket online</h1>
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td>
+						<select name="source">
+							<option>Select Your Source</option>
+							<option id="one">Patia Chowk</option>
+							<option id="two">Chandrashekharpur Police Station</option>
+							<option id="three">Damana Chowk</option>
+							<option id="four">Niladri Vihar</option>
+							<option id="five">Kalinga Hospital</option>
+							<option id="six">Trident Hotel</option>
+							<option id="seven">Pal Heights</option>
+							<option id="eight">Jaidev Vihar CHowk</option>
+							<option id="nine">Kalinga Hockey Stadium</option>
+							<option id="ten">Odisha Legislative Assembly</option>
+							<option id="eleven">PMG Square</option>
+							<option id="twelve">Master Canteen Chowk</option>
+						</select>
+					</td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>
+				<tr>
+					<td>
+						<select name="destination">
+							<option>Select Your Destination</option>
+							<option id="one">Patia Chowk</option>
+							<option id="two">Chandrashekharpur Police Station</option>
+							<option id="three">Damana Chowk</option>
+							<option id="four">Niladri Vihar</option>
+							<option id="five">Kalinga Hospital</option>
+							<option id="six">Trident Hotel</option>
+							<option id="seven">Pal Heights</option>
+							<option id="eight">Jaidev Vihar CHowk</option>
+							<option id="nine">Kalinga Hockey Stadium</option>
+							<option id="ten">Odisha Legislative Assembly</option>
+							<option id="eleven">PMG Square</option>
+							<option id="twelve">Master Canteen Chowk</option>
+						</select>
+					</td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>
+				<tr>
+					<td>Enter the no of tickets:<input type="number" min="0" name="noftickets"></td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" value="Generate Ticket">
+		</form>
+		<!-- <input id="text" type="text" style="width:80%" /><br /> -->
+		<div id="qrcode" style="width:200px; height:200px; margin-top:15px;"></div>
+		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/qrcode.js"></script>
+		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/java.js"></script>
+	</body>
+</html>

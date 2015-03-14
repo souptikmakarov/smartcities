@@ -24,16 +24,4 @@ window.onload=function(){
 		on("keyup", function (e) {
 			makeCode();
 		});
-
-	$('#downloader').on("click",function(){
-		alert('Hello');
-		downloadImage(this,'qrcode.png');
-
-	},false);
-
-	function downloadImage(link,filename){
-		link.href=document.getElementsByTagName('img').attr('src');
-		alert(link.href);
-		link.download=filename;
-	}
 }
