@@ -1,0 +1,14 @@
+html,body{
+
+	margin:0px;
+	padding: 0px;
+}
+#scanner{
+
+	width: 300px;
+	height: 250px;
+}
+#errorsndata{
+
+	margin-top: 50px;
+}
