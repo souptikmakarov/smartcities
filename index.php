@@ -38,22 +38,26 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div id="scanner">
-		</div>
-		<div id="errorsndata">
-			<h2>Read Data</h2>
-			<span id="read"></span>
-			<h2>Read Error</h2>
-			<span id="read_error"></span>
-			<h2>Video Error</h2>
-			<span id="vid_error"></span>
-			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-				<input type="text" id="hash" name="hash">
-				<input type="submit" value="Submit">
-			</form>
-			<span><?php echo "Source:".$source ?></span><br>
-			<span><?php echo "Destination:".$destination ?></span><br>
-			<span><?php echo "Total Fare:".$totfare ?></span><br>
+		<img class="bus" src="bus2.jpg">
+		<div class="content">
+			<div id="scanner">
+			</div>
+			<div id="errorsndata">
+				<h2>Read Data</h2>
+				<span id="read"></span>
+				<h2>Read Error</h2>
+				<span id="read_error"></span>
+				<h2>Video Error</h2>
+				<span id="vid_error"></span>
+				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+					<input type="text" id="hash" name="hash">
+					<input type="submit" value="Submit">
+				</form>
+				<br>
+				<span><?php echo "Source:".$source ?></span><br>
+				<span><?php echo "Destination:".$destination ?></span><br>
+				<span><?php echo "Total Fare:".$totfare ?></span><br>
+			</div>
 		</div>
 		<script type="text/javascript" src="http://localhost/hackathon/lib/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="http://localhost/hackathon/lib/html5-qrcode.min.js"></script>

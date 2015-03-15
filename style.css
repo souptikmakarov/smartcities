@@ -1,7 +1,24 @@
-html,body{
+body{
 
-	margin:0px;
+	position: relative;
+	margin: 0px;
 	padding: 0px;
+}
+.bus{
+
+	webkit-filter:blur(5px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%
+}
+.content{
+	margin-left: 10px;
+	z-index:100;
+    position:absolute;    
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
 }
 #scanner{
 
@@ -12,4 +29,19 @@ html,body{
 #errorsndata{
 
 	margin-top: 50px;
+}
+input{
+
+	font-size: 15px;
+	padding: 5px 4px;
+	border-radius: 10px;
+	border: none; 
+	color: gray;
+	font-weight: bold;	
+}
+input:focus{
+
+	outline: none;
+	color: gray;
+	font-weight: bold;	
 }

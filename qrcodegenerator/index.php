@@ -76,52 +76,56 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<img class="bus" src="bus2.jpg">
 		<div class="content">
-		<h1>Generate your ticket here</h1>
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-			<table>
-				<tr>
-					<td>
-						<select name="source">
-							<option>Select Your Source</option>
-							<option id="one">Patia Chowk</option>
-							<option id="two">Damana Chowk</option>
-							<option id="three">Pal Heights</option>
-							<option id="four">Jaidev Vihar Chowk</option>
-							<option id="five">Master Canteen Chowk</option>
-						</select>
-						<span class="error">&nbsp; <?php echo $sourceErr;?></span>
-					</td>
-				</tr>
-				<tr><td>&nbsp;</td></tr>
-				<tr>
-					<td>
-						<select name="destination">
-							<option>Select Your Destination</option>
-							<option id="one">Patia Chowk</option>
-							<option id="two">Damana Chowk</option>
-							<option id="three">Pal Heights</option>
-							<option id="four">Jaidev Vihar Chowk</option>
-							<option id="five">Master Canteen Chowk</option>
-						</select>
-						<span class="error">&nbsp; <?php echo $destinationErr;?></span>
-						<p><span class="error">&nbsp; <?php echo $valueErr;?></span></p>
-					</td>
-				</tr>
-				<tr><td>&nbsp;</td></tr>
-				<tr>
-					<td>Enter the no of tickets:<input type="number" min="0" name="ticket"></td>
-					<td><span class="error">&nbsp; <?php echo $ticketErr;?></span></td>
-				</tr>
-			</table>
-			<br>
-			<input type="submit" value="Generate Ticket"><br><br>
-			<span class="final"><?php echo $final;?></span>
-		</form>
-		<input id="text" type="hidden" value="<?php if(isset($hash)){echo $hash;} ?>"><br>
-		<div><?php echo $hash ?></div>
-		<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+			<h1>Generate your ticket here</h1>
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+				<table>
+					<tr>
+						<td>
+							<select name="source">
+								<option>Select Your Source</option>
+								<option id="one">Patia Chowk</option>
+								<option id="two">Damana Chowk</option>
+								<option id="three">Pal Heights</option>
+								<option id="four">Jaidev Vihar Chowk</option>
+								<option id="five">Master Canteen Chowk</option>
+							</select>
+							<span class="error">&nbsp; <?php echo $sourceErr;?></span>
+						</td>
+					</tr>
+					<tr><td>&nbsp;</td></tr>
+					<tr>
+						<td>
+							<select name="destination">
+								<option>Select Your Destination</option>
+								<option id="one">Patia Chowk</option>
+								<option id="two">Damana Chowk</option>
+								<option id="three">Pal Heights</option>
+								<option id="four">Jaidev Vihar Chowk</option>
+								<option id="five">Master Canteen Chowk</option>
+							</select>
+							<span class="error">&nbsp; <?php echo $destinationErr;?></span>
+							<p><span class="error">&nbsp; <?php echo $valueErr;?></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>Enter the no of tickets</td>
+					</tr>
+					<tr>
+						<td><input type="number" min="0" name="ticket"></td>
+						<td><span class="error">&nbsp; <?php echo $ticketErr;?></span></td>
+					</tr>
+				</table>
+				<br>
+				<div class="submitbutton" id="submitbutton">Generate ticket</div>
+				<span class="final"><?php echo $final;?></span>
+			</form>
+			<input id="text" type="hidden" value="<?php if(isset($hash)){echo $hash;} ?>"><br>
+			<div><?php echo $hash ?></div>
+			<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
 		</div>
+		<div class="footer">Site designed by Souptik Banerjee, Puranjan Banerjee, Arnab Debnath</div>
 		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/qrcode.js"></script>
 		<script type="text/javascript" src="http://localhost/hackathon/qrcodegenerator/java.js"></script>

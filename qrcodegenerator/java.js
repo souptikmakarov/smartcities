@@ -24,4 +24,9 @@ window.onload=function(){
 		on("keyup", function (e) {
 			makeCode();
 		});
+
+	$("#submitbutton").on("click",function(){
+
+		$('form').submit();
+	});
 }
