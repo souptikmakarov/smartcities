@@ -1,0 +1,12 @@
+html{
+
+	margin: 0px;
+	padding: 0px;
+	background: url(bus.jpeg) no-repeat center center fixed;
+}
+div.content{
+
+	background-color: black;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+}

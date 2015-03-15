@@ -1,4 +1,4 @@
-window.onload=function () {
+$(document).ready(function () {
 	$('#scanner').html5_qrcode(function(data){
 	 		$('#read').html(data);
 	 	},
@@ -8,4 +8,4 @@ window.onload=function () {
 			$('#vid_error').html(videoError);
 		}
 	);
-}
+});
